@@ -293,7 +293,7 @@ Bootstrap 4 breakpoints
 Extra small devices (portrait phones, less than 576px) 
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
-@media (max-width: 576px) {  
+@media (max-width: 768px) {  
     .hero {
         text-align:center;
     }
@@ -336,41 +336,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
     
-    .hero {
-        text-align:center;
-    }
-    .hero .title{
-        font-size: 36px;
-    }
-    .hero .subtitle{
-        font-size: 18px;
-    }
-
-    .hero-image:after, .hero-image::before{
-        display: none;
-    }
-    .hero-image .over-image{
-        display: none;
-    }
-    .hero-image{
-        padding:0px;
-    }
-
-    .hero .btn-primarary{
-        display: inline-block;
-        margin: 5px auto;
-    }
-
-    .title{
-        font-size: 36px;
-    }
-    .btn-primarary{        
-        padding: 15px 15px;
-        font-size: 14px;
-    }
-    .work-productively{
-        margin-top: 0px;
-    }
 
 }
 
