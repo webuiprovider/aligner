@@ -1,0 +1,38 @@
+{{- $inServerMode := .Site.IsServer }}
+{{- $sass         := "css/style.css" }}
+{{- $cssTarget    := "css/style.css" }}
+{{- $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+{{- $fontFace     := replace .Site.Params.font.name " " "+" }}
+{{- $fontSizes    := delimit .Site.Params.font.sizes "," }}
+<!-- {{- $fontUrl      := printf "https://fonts.googleapis.com/css?family=%s:%s" $fontFace $fontSizes }} -->
+{{- $fontUrl      := printf "https://fonts.googleapis.com/css?family=%s:%s" $fontFace $fontSizes }}
+
+
+<link rel="icon" type="image/png" href="{{ "images/favicon.svg" | relURL }}" />
+
+<!--fonts-->
+<link href="{{ $fontUrl }}" rel="stylesheet">
+<!-- 
+<link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | relURL }}">
+
+
+<link rel="stylesheet" type="text/css" href="{{ "/css/msdropdown/dd.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "/css/msdropdown/flags.css" | relURL }}">
+
+<link rel="stylesheet" type="text/css" href="{{ "/css/custom.css" | relURL }}"> -->
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    
+    <!-- Custom Css -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="{{ "css/style.css" | relURL }}" rel="stylesheet">
+    
+    

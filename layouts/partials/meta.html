@@ -1,0 +1,40 @@
+{{ template "_internal/google_analytics_async.html" . }}
+{{ if eq .Site.Params.openGraph true }}
+{{ template "_internal/opengraph.html" . }}
+{{ end }}
+<meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }} Online multilingual localisation for the blogs, websites and documents. Edit and publish your multilingual content 10X faster.{{ end }}" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta property="og:image" content="{{ if .Params.ogImage }} {{.Params.ogImage}} {{else }} https://www.aligner.io/images/og_fb_aligner.png {{end}}">
+<meta property="og:url" content="https://www.aligner.io">
+
+{{ range .Site.Languages }}   
+  <link rel="alternate" hreflang="{{.}}" href="{{ $.Site.BaseURL }}{{.}}" />
+  <link rel="canonical/" href="{{ $.Site.BaseURL }}{{.}}"/>
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ $.Site.BaseURL }}" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TCV3K3C');</script>
+    <!-- End Google Tag Manager -->
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '168430737422460');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=168430737422460&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->

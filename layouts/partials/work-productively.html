@@ -1,0 +1,29 @@
+{{- $translations := .Site.Params.workProductively }}
+{{- $title    := index $translations "title" }}
+{{- $subtitle := index $translations "subtitle" }}
+{{- $buttonText    := index $translations "buttonText" }}
+{{- $buttonlink    := index $translations "buttonlink" }}
+{{- $image    := index $translations "image" }}
+<section class="section bg-gray work-productively">
+  <div class="container">
+      <div class="row">
+                   
+        <div class="col-md-12  mb-3 text-center">
+            <h2 class="title ">{{ $title }}</h2>
+            <h3 class="subtitle ">{{ $subtitle }}</h3>
+        </div>
+        <div class="col-md-12 mb-3">
+            <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $title }}" class="img-fluid">
+        </div> 
+        <div class="col-12 text-center">            
+            <p class="mt-4">
+                <a class="button btn-primarary mt-2" href="{{ $buttonlink }}">
+                    {{ $buttonText }}
+                </a>
+            </p>
+        </div>
+
+      </div>
+
+  </div>
+</section>

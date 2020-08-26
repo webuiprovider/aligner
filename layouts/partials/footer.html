@@ -1,0 +1,61 @@
+{{- $footer      := .Site.Params.footer }}
+{{- $logo        := index $footer "logo" }}
+{{- $quickLinks  := index $footer "quicklinks" }}
+{{- $socialMedia := index $footer "socialmedia" }}
+{{- $bulmaLogo   := index $footer "bulmalogo" }}
+{{- $socialMediaTitle    := index $footer "socialmediatitle" }}
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-lg-3">            
+                <div class="footer-logo">
+                        <img src="{{ printf "/images/%s" $logo | relURL }}" alt="aligner" class="img-fluid">
+                </div>
+            </div>        
+            <div class="col-md-10 col-lg-9">  
+                <div class="row">
+                    {{- range $quickLinks }}
+                        <div class="col-md-3">
+                                <div class="footer-header">
+                                    <h3>{{ .title }}</h3>
+                                </div>
+                                <ul class="link-list">
+                                {{- range .links }}
+                                    <li>
+                                        <a href="{{ .link }}">
+                                        {{ .text }}
+                                        </a>
+                                    </li>
+                                {{- end }}
+                                </ul>
+                        </div>
+                    {{- end }}                    
+                    <div class="col-md-3">
+                        <div class="footer-header">
+                            <h3>{{ $socialMediaTitle }}</h3>
+                            <ul class="social-media">
+                                {{- range $socialMedia }}
+                                    <li>
+                                        <a class="level-item" href="{{ .link }}">
+                                            <i class="fa fa-{{ .icon }}"></i>
+                                        </a>
+                                    </li>
+                                   
+                                {{- end }}
+                            </ul>
+                        </div>
+
+                        {{ partial "languageList.html" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+
+
+
+

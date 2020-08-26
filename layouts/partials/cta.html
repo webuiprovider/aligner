@@ -1,0 +1,20 @@
+{{- $cta   := .Site.Params.CTA }}
+{{- $title      := index $cta "title" }}
+{{- $text   := index $cta "text" }}
+{{- $subtitle   := index $cta "subtitle" }}
+{{- $clientLogos   := index $cta "clientlogos" }}
+{{- $ctaAlt   := index $cta "ctaAlt" }}
+
+<section class="section cta bg-gray">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="title ">{{ $title }}</h2>
+        <h3 class="subtitle mt-4">{{ $subtitle }}</h3>
+        <p class="mt-4"><a href="{{ $cta.btnURL }}" class="button btn-primarary {{ $cta.btnKlass }} raised ">{{ $cta.btnText }}</a></p>        
+        <p class="font-16 mt-4">{{ $text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+

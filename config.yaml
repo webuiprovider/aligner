@@ -1,0 +1,129 @@
+---
+baseURL: 
+languageCode: en-us
+DefaultContentLanguage: en
+title: Aligner | Translate 10X faster | Online free platform.
+# theme: hugo-fresh
+# googleAnalytics: UA-138300699-1
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+params:
+  BookMenuBundle: "/menu"
+  openGraph: true
+  description: Translate 10 times faster with Aligner. Free collaboration tool.
+  navbarlogo:
+    image: logo-new.png
+    link: "/en"
+    alt: Aligner
+  font:
+    name: Poppins
+    sizes:
+    - 400
+    - 600
+  navbar:
+  - title: Features
+    url: "/features"
+  - title: Pricing
+    url: "/pricing"
+  - title: Blog
+    url: "/blog/"
+  - title: Tutorials
+    url: "/tutorials"
+  - title: Log in
+    url: https://app.aligner.io
+  - title: Start free now →
+    url: https://app.aligner.io
+    button: true
+  hero:
+    title: Translate and publish content in seconds
+    subtitle: Create, collaborate, edit and publish your web content simultaneously in 130+ languages
+    buttontext: Start free now →
+    buttonlink: https://app.aligner.io
+    buttontext2:  learn more
+    buttonlink2: 
+    image: hero.png
+  translations:
+    enable: true
+    title: Get translations faster
+    subtitle: Translate 10x faster with immediate machine translations and manage workflow instantly in one place
+    buttonlink: "#"
+    buttonText: start working and invite people
+    image: transition.svg  
+  workProductively:
+    enable: true
+    title: Work productively
+    subtitle: Update content in real-time, assign translations and manage workflow instantly in one place.
+    buttonlink: "#"
+    buttonText: start working and invite people →
+    image: work-productively.svg  
+  collaborators:
+    enable: true
+    title: Work on multilingual documents with ease
+    subtitle: Made for marketers and content creators.
+    features:
+    - title: Connect collaborators and content
+      text: Use just one link to invite taem members and collaborators to edit multilingual content simultaneosly in Aligner’s parallel editor
+      image: "/images/share-document.svg"
+      alt: 
+      btnText: see it in action →
+      btnURL: #
+    - title: Publish directly
+      text: Embed created content with illustrations and graphs as a link to your webpage or share via the public link.
+      image: "/images/publish.svg"
+      alt: 
+      btnText: start working and invite people →
+      btnURL: #
+  CTA:
+    enable: true
+    title: Creating multilingual content?
+    subtitle: We make it easier
+    text: It's free. No credit card required.
+    btnText: give it a try →
+    btnURL: https://calendly.com/aligner/15min
+    btnKlass: 
+    clientlogos: 
+    ctaAlt: 
+  footer:
+    logo: footer-logo.svg
+    alt: Aligner
+    socialmediatitle: Follow Us
+    socialmedia:
+    - link: https://www.facebook.com/align.and.scale/
+      icon: facebook
+    - link: https://www.instagram.com/align_and_scale/
+      icon: instagram
+    - link: https://www.linkedin.com/company/aligner
+      icon: linkedin
+    quicklinks:
+      column1:
+        title: Legal
+        links:
+        - text: Privacy Policy
+          link: "/privacy-policy"
+        - text: Delivery Policy
+          link: "/delivery-policy"
+        - text: Terms of use
+          link: "/terms-of-use"
+      column2:
+        title: Product
+        links:
+        - text: Plans
+          link: "/pricing"
+        - text: Blog
+          link: "/blog"
+        - text: Features
+          link: "/features/"
+      column3:
+        title: Resources
+        links:
+        - text: Aligner POOL
+          link: https://pool.aligner.io
+        - text: Aligner GO
+          link: https://go.aligner.io
+        - text: "Eesti Keeles \U0001F1EA\U0001F1EA"
+          link: "/et"

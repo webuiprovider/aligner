@@ -1,0 +1,25 @@
+
+{{ define "main" }}
+    {{ if .Site.Params.hero }}
+        {{ partial "hero.html" . }}
+    {{ end }}
+    
+    {{ if .Site.Params.translations.enable }}
+        {{ partial "translations.html" . }}
+    {{ end }}    
+    {{ if .Site.Params.workProductively.enable }}
+        {{ partial "work-productively.html" . }}
+    {{ end }}  
+
+    {{ if .Site.Params.collaborators.enable }}
+        {{ partial "collaborators.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.CTA.enable }}
+        {{ partial "cta.html" . }}
+    {{ end }}
+    
+    
+
+    
+{{ end }}

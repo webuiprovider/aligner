@@ -1,0 +1,27 @@
+
+{{- $translations := .Site.Params.translations }}
+{{- $title    := index $translations "title" }}
+{{- $subtitle := index $translations "subtitle" }}
+{{- $buttonText    := index $translations "buttonText" }}
+{{- $buttonlink    := index $translations "buttonlink" }}
+{{- $image    := index $translations "image" }}
+<section class="section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+            <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $title }}" class="img-fluid">
+          </div>          
+          <div class="col-md-6  my-auto">
+            <h2 class="title ">{{ $title }}</h2>
+            <h3 class="subtitle ">{{ $subtitle }}</h3>
+            <p class="mt-4">
+                <a class="button btn-primarary mt-2" href="{{ $buttonlink }}">
+                    {{ $buttonText }}
+                </a>
+            </p>
+        </div>
+
+      </div>
+
+  </div>
+</section>

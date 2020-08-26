@@ -1,0 +1,44 @@
+{{- $hero       := .Site.Params.hero }}
+{{- $title      := index $hero "title" }}
+{{- $subtitle   := index $hero "subtitle" }}
+{{- $buttonText := index $hero "buttontext" }}
+{{- $buttonLink := index $hero "buttonlink" }}
+{{- $buttonText2 := index $hero "buttontext2" }}
+{{- $buttonLink2 := index $hero "buttonlink2" }}
+{{- $image      := index $hero "image" }}
+<section class="hero py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4"> 
+                <h1 class="title mt-5">
+                    {{ $title }}
+                </h1>
+                {{ with $subtitle }}
+                    <h2 class="subtitle my-4">{{ . }}</h2>
+                {{end}}
+                <p class="mt-2">
+                    <a class="button btn-primarary mr-2" href="{{ $buttonLink }}">
+                        {{ $buttonText }}
+                    </a>
+                    {{ if $buttonText2 }}                    
+                    <a class="button btn-primarary px-3" href="{{ $buttonLink2 }}">
+                        {{ $buttonText2 }}
+                    </a>
+
+                    {{end}}
+                </p>
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <figure class="hero-image">
+                    <span class="over-image">
+                        <img src="{{  "/images/over-img-2.png"  | relURL }}" alt="hero" class="img-fluid">
+                    </span>
+                    <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $title }}">
+                    <span class="over-image b-r">
+                        <img src="{{ printf "/images/over-img-1.png"  | relURL }}" alt="hero" class="img-fluid">
+                    </span>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>

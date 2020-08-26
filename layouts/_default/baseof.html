@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ if .Page.Title }} {{ .Title }} {{ else }} .Site.Title }} {{end}}</title>
+    {{ partial "css.html" . }}
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCV3K3C"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->  
+    {{ partial "menu.html" . }}
+
+    {{ block "main" . }}
+    {{ end }}
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
