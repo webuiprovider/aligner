@@ -5,17 +5,17 @@
 <section class="section collaborators">
   <div class="container">
     {{- range $index, $ele := $features }}
-    <div class="row mb-4">
-        <div class="col-md-6 my-auto" style="{{if not (modBool $index 2)}}order:2{{end}}">
+    <div class="row mb-80">
+        <div class="col-md-5 col-lg-5 col-xl-5 my-auto" style="{{if not (modBool $index 2)}}order:2{{end}}">
             <h3 class="title">
                 {{ .title }}
             </h3>
-            <p class="subtitle mb-4">
+            <p class="subtitle my-5">
                 {{ .text | markdownify }}
             </p>
             <p><a class="button btn-align-md btn-primarary   {{ .btnKlass | markdownify }}" href="{{ .btnURL}}">{{ .btnText | markdownify }}</a></p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7 col-lg-7 col-xl-7">
             <figure class="media-left">
                 <p class="image">
                   <img src="{{ .image | relURL }}" alt="{{if .alt }} {{ .alt }} {{else}} {{.title}} {{end}}" class="img-fluid">

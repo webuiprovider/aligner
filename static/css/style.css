@@ -9,10 +9,16 @@ body{
     font-size: 20px;
     line-height: 38px;    
     min-height: 75rem;
-    padding-top: 5.2rem;
+    padding-top: 4.52rem;
 }
 .font-16{
     font-size: 16px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-100{
+    margin-bottom: 100px;
 }
 
 .primarary-text{
@@ -49,8 +55,8 @@ body{
     text-transform: uppercase;
     color: #ffffff;
     border-radius: 5px;
-    padding: 15px 25px !important;
-    transition: all ease-in-out .2s;
+    padding: 10px 15px !important;
+    transition: all ease-in-out .3s;
 }
 .btn-secondary:hover{    
     background:#1B2537;
@@ -60,7 +66,7 @@ body{
 .btn-primarary{ 
     background:#FFC737;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
@@ -68,19 +74,29 @@ body{
     border-radius: 5px;
     align-self: center;
     padding: 15px 25px;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out .3s;
     text-decoration: none;
 }
 .btn-primarary:hover{    
     background:#24695C;
     text-decoration: none;
     color: #ffffff;
+    transition: all ease-in-out .3s;
+}
+.btn-primarary.btn-bod{
+    background: transparent;
+    border: 1px solid #FFC737;
+}
+
+.btn-primarary.btn-bod:hover{
+    background:#FFC737;
+    color: #1B2537;
 }
 
 
 .title{
     font-weight: bold;
-    font-size: 46px;
+    font-size: 38px;
     line-height: 130%;
     color: #1B2537;
 }
@@ -101,21 +117,23 @@ body{
 /******************************
         Navbar
 ******************************/
+.navbar-light .navbar-brand img{
+    max-width:70%;
+}
 .navbar{
-    background: #ffffff;
-    box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+    background: #ffffff !important;
 }
 .navbar .main-nav .nav-item {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
 }
 .navbar .main-nav .nav-item .nav-link{
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: 0.005em;
     color: #1B2537;
 }
@@ -123,35 +141,12 @@ body{
 {
     color: #24695C;
 }
-.navbar .main-nav .nav-item.login::before{
-    content: "|";
-    color: #DCE3EC;
-    position: absolute;
-    left: 0px;
-    margin: auto;
-    top: 0px;
-    bottom: 0px;
-    font-size: 24px;
-    height: 30px;
-    line-height: 30px;
+
+.navbar .main-nav .nav-item .nav-link.btn-secondary{
+    line-height: 24px;
+   
 }
 
-.btn-signup{
-    background: rgba(32, 95, 83, 0.1);
-    border-radius: 8px;
-    padding: 8px 15px !important;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 30px;
-
-    /* or 203% */
-    display: flex;
-    align-items: center;
-    text-align: right;
-    letter-spacing: 0.005em;
-
-    color: #24695C !important;
-}
 
 /******************************
         HERO
@@ -199,17 +194,21 @@ body{
     right: 0px;
 }
 .hero .subtitle {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 37px;
     color: #646A73;
     font-weight: 300;
 }
 .hero .title{
-    font-size: 55px;
+    font-size: 48px;
 }
 
 .work-productively{
     margin-top: -160px;
+}
+
+.section.collaborators .row.mb-80:last-child{
+    margin-bottom: 0px !important;
 }
 .cta{
     position: relative;
@@ -298,7 +297,34 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         text-align:center;
     }
     .hero .title{
-        font-size: 36px;
+        font-size: 21px;
+    }
+
+    .hero .subtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .cta .subtitle {
+        font-size: 20px;
+    }
+
+    .footer-logo{
+        margin-bottom: 15px;
+    }
+
+    footer .footer-header h3{
+        font-size: 18px;
+    }
+    footer .link-list{
+        margin-bottom: 15px;
+    }
+    footer .link-list li{
+        line-height: 20px;
     }
 
     
@@ -318,7 +344,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .title{
-        font-size: 36px;
+        font-size: 20px;
     }
     .btn-primarary{        
         padding: 15px 15px;

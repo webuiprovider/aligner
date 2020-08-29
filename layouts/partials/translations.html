@@ -8,12 +8,12 @@
 <section class="section">
   <div class="container">
       <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7 col-lg-7 col-xl-7">
             <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $title }}" class="img-fluid">
           </div>          
-          <div class="col-md-6  my-auto">
+          <div class="col-md-5 col-lg-5 col-xl-5  my-auto">
             <h2 class="title ">{{ $title }}</h2>
-            <h3 class="subtitle ">{{ $subtitle }}</h3>
+            <h3 class="subtitle my-5">{{ $subtitle }}</h3>
             <p class="mt-4">
                 <a class="button btn-primarary mt-2" href="{{ $buttonlink }}">
                     {{ $buttonText }}

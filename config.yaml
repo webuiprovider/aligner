@@ -40,7 +40,7 @@ params:
     url: https://app.aligner.io
     button: true
   hero:
-    title: Translate and publish content in seconds
+    title: Translate and publish content <br> in seconds
     subtitle: Create, collaborate, edit and publish your web content simultaneously in 130+ languages
     buttontext: Start free now →
     buttonlink: https://app.aligner.io
@@ -57,7 +57,7 @@ params:
   workProductively:
     enable: true
     title: Work productively
-    subtitle: Update content in real-time, assign translations and manage workflow instantly in one place.
+    subtitle: Update content in real-time, assign translations and manage <br> workflow instantly in one place.
     buttonlink: "#"
     buttonText: start working and invite people →
     image: work-productively.svg  
