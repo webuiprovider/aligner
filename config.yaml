@@ -127,3 +127,131 @@ params:
           link: https://go.aligner.io
         - text: "Eesti Keeles \U0001F1EA\U0001F1EA"
           link: "/et"
+Languages:
+  en:
+    contentDir: content/english
+    home: Home
+    languageCode: en-us
+    languageName: English
+    weight: "1"
+  et:
+    contentDir: content/estonian
+    home: Kodu
+    languageCode: et
+    languageName: Eesti keeles
+    weight: "3"
+    title: Aligner | Tasuta online tõlkeplatvorm.
+    params:
+      BookMenuBundle: "/menüü"
+      openGraph: true
+      description: Tasuta tõlkimine ja mitmekeelse sisu haldamine.
+      navbarlogo:
+        link: "/et"
+        alt: Aligner home page logo
+        image: logo-new.png
+      font:
+        name: Poppins
+        sizes:
+        - 400
+        - 600
+      hero:
+        title: Sisu tõlkimine ja avaldamine sekunditega
+        subtitle: Looge, tehke koostööd, muutke ja avaldage oma veebisisu samaaegselt enam kui 130 keeles
+        buttontext: Proovi tasuta →
+        buttonlink: https://app.aligner.io
+        buttontext2:  rohkem teada saada
+        buttonlink2:  
+        image: hero.png
+      navbar:
+      - title: Funktsioonid
+        url: "/et/funktsioonid"
+      - title: Hinnad
+        url: "/et/hinnad"
+      - title: Blogi
+        url: "/et/blogi"
+      - title: Õpetused
+        sublinks: 
+        url: "/et/õpetused"
+      - title: Logi sisse
+        url: https://app.aligner.io
+      - title: Alusta siin →
+        url: https://app.aligner.io
+        button: true
+      translations:
+        enable: true
+        title: Hankige tõlkeid kiiremini
+        subtitle: Tõlkige 10x kiiremini koheste masintõlgetega ja hallake töövoogu koheselt ühes kohas
+        buttonlink: "#"
+        buttonText: asuge tööle ja kutsuge inimesi
+        image: transition.svg    
+      workProductively:
+        enable: true
+        title: Töötage produktiivselt
+        subtitle: Värskendage sisu reaalajas, määrake tõlkeid ja hallake <br> töövoogu koheselt ühes kohas.
+        buttonlink: "#"
+        buttonText: asuge tööle ja kutsuge inimesi  →
+        image: work-productively.svg  
+      collaborators:
+        enable: true
+        title: Töötage mitmekeelsete dokumentidega hõlpsalt
+        subtitle: Loodud turundajatele ja sisuloojatele.
+        features:
+        - title: Ühendage kaasautorid ja sisu
+          text: Kasutage ainult ühte linki, et kutsuda taemi liikmeid ja koostööpartnereid Aligneri paralleeliredaktoris samaaegselt mitmekeelset sisu redigeerima
+          image: "/images/share-document.svg"
+          alt: 
+          btnText: vaata seda tegutsemas →
+          btnURL: #
+        - title: Avaldage otse
+          text: Manustage loodud sisu koos illustratsioonide ja graafikutega lingina oma veebisaidile või jagage seda avaliku lingi kaudu.
+          image: "/images/publish.svg"
+          alt: 
+          btnText: asuge tööle ja kutsuge inimesi →
+          btnURL: # 
+      CTA:
+        enable: true
+        title: Mitmekeelse sisu loomine?
+        subtitle: Me teeme selle lihtsamaks
+        text: See on tasuta. Krediitkaarti pole vaja.
+        btnText: proovi →
+        btnURL: https://calendly.com/aligner/15min
+        btnKlass: 
+        clientlogos: 
+        ctaAlt:   
+      footer:
+        logo: footer-logo.svg
+        alt: Aligner
+        socialmediatitle: Jälgi meid
+        socialmedia:
+        - link: https://www.facebook.com/align.and.scale/
+          icon: facebook
+        - link: https://www.instagram.com/align_and_scale/
+          icon: instagram
+        - link: https://www.linkedin.com/company/aligner
+          icon: linkedin
+        quicklinks:
+          column1:
+            title: Tingimused
+            links:
+            - text: Privaatsuspoliitika
+              link: "/et/privaatsuspoliitika"
+            - text: Tarnepoliitika
+              link: "/et/tarnepoliitika"
+            - text: Kasutustingimused
+              link: "/et/kasutustingimused"
+          column2:
+            title: Tootest
+            links:
+            - text: Hinnad
+              link: "/et/hinnad"
+            - text: Blogi
+              link: "/et/blogi"
+            - text: Funktsioonid
+              link: "/et/funktsioonid/"
+          column3:
+            title: Materjalid
+            links:
+            - text: Aligner POOL
+              link: https://pool.aligner.io
+            - text: Aligner GO
+              link: https://go.aligner.io
