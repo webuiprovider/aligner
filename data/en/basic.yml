@@ -1,0 +1,55 @@
+################################# Nav #####################################
+
+navbar:
+- title: Features
+  url: "/features"
+- title: Pricing
+  url: "/pricing"
+- title: Blog
+  url: "/blog/"
+- title: Tutorials
+  url: "/tutorials"
+- title: Log in
+  url: https://app.aligner.io
+- title: Start free now →
+  url: https://app.aligner.io
+  button: true
+footer:
+  logo: footer-logo.svg
+  alt: Aligner
+  socialmediatitle: Follow Us
+  socialmedia:
+  - link: https://www.facebook.com/align.and.scale/
+    icon: facebook
+  - link: https://www.instagram.com/align_and_scale/
+    icon: instagram
+  - link: https://www.linkedin.com/company/aligner
+    icon: linkedin
+  quicklinks:
+    column1:
+      title: Legal
+      links:
+      - text: Privacy Policy
+        link: "/privacy-policy"
+      - text: Delivery Policy
+        link: "/delivery-policy"
+      - text: Terms of use
+        link: "/terms-of-use"
+    column2:
+      title: Product
+      links:
+      - text: Plans
+        link: "/pricing"
+      - text: Blog
+        link: "/blog"
+      - text: Features
+        link: "/features/"
+    column3:
+      title: Resources
+      links:
+      - text: Aligner POOL
+        link: https://pool.aligner.io
+      - text: Aligner GO
+        link: https://go.aligner.io
+      - text: "Eesti Keeles \U0001F1EA\U0001F1EA"
+        link: "/et"

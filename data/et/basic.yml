@@ -1,0 +1,54 @@
+################################# Basic #####################################
+
+navbar:
+- title: Funktsioonid
+  url: "/et/funktsioonid"
+- title: Hinnad
+  url: "/et/hinnad"
+- title: Blogi
+  url: "/et/blogi"
+- title: Õpetused
+  sublinks: 
+  url: "/et/õpetused"
+- title: Logi sisse
+  url: https://app.aligner.io
+- title: Alusta siin →
+  url: https://app.aligner.io
+  button: true
+footer:
+  logo: footer-logo.svg
+  alt: Aligner
+  socialmediatitle: Jälgi meid
+  socialmedia:
+  - link: https://www.facebook.com/align.and.scale/
+    icon: facebook
+  - link: https://www.instagram.com/align_and_scale/
+    icon: instagram
+  - link: https://www.linkedin.com/company/aligner
+    icon: linkedin
+  quicklinks:
+    column1:
+      title: Tingimused
+      links:
+      - text: Privaatsuspoliitika
+        link: "/et/privaatsuspoliitika"
+      - text: Tarnepoliitika
+        link: "/et/tarnepoliitika"
+      - text: Kasutustingimused
+        link: "/et/kasutustingimused"
+    column2:
+      title: Tootest
+      links:
+      - text: Hinnad
+        link: "/et/hinnad"
+      - text: Blogi
+        link: "/et/blogi"
+      - text: Funktsioonid
+        link: "/et/funktsioonid/"
+    column3:
+      title: Materjalid
+      links:
+      - text: Aligner POOL
+        link: https://pool.aligner.io
+      - text: Aligner GO
+        link: https://go.aligner.io

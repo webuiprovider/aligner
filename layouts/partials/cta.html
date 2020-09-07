@@ -1,18 +1,13 @@
-{{- $cta   := .Site.Params.CTA }}
-{{- $title      := index $cta "title" }}
-{{- $text   := index $cta "text" }}
-{{- $subtitle   := index $cta "subtitle" }}
-{{- $clientLogos   := index $cta "clientlogos" }}
-{{- $ctaAlt   := index $cta "ctaAlt" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
 
 <section class="section cta bg-gray">
   <div class="container"> 
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2 class="title ">{{ $title }}</h2>
-        <h3 class="subtitle mt-4">{{ $subtitle }}</h3>
-        <p class="mt-4"><a href="{{ $cta.btnURL }}" class="button btn-primarary {{ $cta.btnKlass }} raised ">{{ $cta.btnText }}</a></p>        
-        <p class="font-16 mt-4">{{ $text }}</p>
+        <h2 class="title ">{{ $data.homepage.CTA.title   }}</h2>
+        <h3 class="subtitle mt-4">{{ $data.homepage.CTA.subtitle  }}</h3>
+        <p class="mt-4"><a href="{{ $data.homepage.CTA.btnURL }}" class="button btn-primarary {{ $data.homepage.CTA.btnKlass }} raised ">{{ $data.homepage.CTA.btnText  }}</a></p>        
+        <p class="font-16 mt-4">{{ $data.homepage.CTA.text}}</p>
       </div>
     </div>
   </div>

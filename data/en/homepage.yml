@@ -1,0 +1,58 @@
+################################# Hero #####################################
+hero:
+  enable : true
+  title: Translate and publish content <br> in seconds
+  subtitle: Create, collaborate, edit and publish your web content simultaneously in 130+ languages
+  buttontext: Start free now →
+  buttonlink: https://app.aligner.io
+  buttontext2:  learn more
+  buttonlink2: 
+  image: hero.png
+
+################################# Translations #####################################
+
+translations:
+  enable: true
+  title: Get translations faster
+  subtitle: Translate 10x faster with immediate machine translations and manage workflow instantly in one place
+  buttonlink: "#"
+  buttonText: start working and invite people
+  image: transition.svg
+################################# Translations #####################################  
+workProductively:
+  enable: true
+  title: Work productively
+  subtitle: Update content in real-time, assign translations and manage <br> workflow instantly in one place.
+  buttonlink: "#"
+  buttonText: start working and invite people →
+  image: work-productively.svg    
+################################# collaborators #####################################   
+collaborators:
+  enable: true
+  title: Work on multilingual documents with ease
+  subtitle: Made for marketers and content creators.
+  features:
+  - title: Connect collaborators and content
+    text: Use just one link to invite taem members and collaborators to edit multilingual content simultaneosly in Aligner’s parallel editor
+    image: "/images/share-document.svg"
+    alt: 
+    btnText: see it in action →
+    btnURL: #
+  - title: Publish directly
+    text: Embed created content with illustrations and graphs as a link to your webpage or share via the public link.
+    image: "/images/publish.svg"
+    alt: 
+    btnText: start working and invite people →
+
+ 
+################################# CTA #####################################   
+CTA:
+  enable: true
+  title: Creating multilingual content?
+  subtitle: We make it easier
+  text: It's free. No credit card required.
+  btnText: give it a try →
+  btnURL: https://calendly.com/aligner/15min
+  btnKlass: 
+  clientlogos: 
+  ctaAlt: 

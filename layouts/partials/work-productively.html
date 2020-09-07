@@ -1,9 +1,4 @@
-{{- $translations := .Site.Params.workProductively }}
-{{- $title    := index $translations "title" }}
-{{- $subtitle := index $translations "subtitle" }}
-{{- $buttonText    := index $translations "buttonText" }}
-{{- $buttonlink    := index $translations "buttonlink" }}
-{{- $image    := index $translations "image" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
 
 {{ "<!-- workproductively -->" | safeHTML }}
 <section class="section bg-gray work-productively">
@@ -11,16 +6,16 @@
       <div class="row">
                    
         <div class="col-md-12 col-lg-12 col-xl-12  mb-3 text-center">
-            <h2 class="title mb-4">{{ $title }} </h2>
-            <h3 class="subtitle ">{{ $subtitle | safeHTML }}</h3>
+            <h2 class="title mb-4">{{ $data.homepage.workProductively.title | safeHTML }} </h2>
+            <h3 class="subtitle ">{{ $data.homepage.workProductively.subtitle | safeHTML }}</h3>
         </div>
         <div class="col-md-12 col-lg-12 col-xl-12 mb-3">
-            <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $title }}" class="img-fluid">
+            <img src="{{ printf "/images/%s"  $data.homepage.workProductively.image   | relURL }}" alt="{{ $data.homepage.workProductively.title | safeHTML }}" class="img-fluid">
         </div> 
         <div class="col-md-12 col-lg-12 col-xl-12 text-center">            
             <p class="mt-4">
-                <a class="button btn-primarary mt-2" href="{{ $buttonlink }}">
-                    {{ $buttonText }}
+                <a class="button btn-primarary mt-2" href="{{ $data.homepage.workProductively.buttonlink }}">
+                     {{ $data.homepage.workProductively.buttonText }}
                 </a>
             </p>
         </div>

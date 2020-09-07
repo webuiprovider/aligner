@@ -1,17 +1,21 @@
 
 {{ define "main" }}
-    {{ if .Site.Params.hero }}
-        {{ partial "hero.html" . }}
+    
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+
+    {{ if $data.homepage.hero.enable }}
+        {{ partial "hero.html" . }}        
     {{ end }}
     
-    {{ if .Site.Params.translations.enable }}
+    {{ if $data.homepage.translations.enable }}
         {{ partial "translations.html" . }}
-    {{ end }}    
-    {{ if .Site.Params.workProductively.enable }}
+    {{ end }} 
+
+    {{ if $data.homepage.workProductively.enable }}
         {{ partial "work-productively.html" . }}
     {{ end }}  
 
-    {{ if .Site.Params.collaborators.enable }}
+    {{ if $data.homepage.collaborators.enable }}
         {{ partial "collaborators.html" . }}
     {{ end }}
 

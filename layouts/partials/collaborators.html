@@ -1,10 +1,7 @@
-{{- $collaborators := .Site.Params.collaborators }}
-{{- $title    := index $collaborators "title" }}
-{{- $subtitle := index $collaborators "subtitle" }}
-{{- $features := index $collaborators "features" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
 <section class="section collaborators">
   <div class="container">
-    {{- range $index, $ele := $features }}
+    {{- range $index, $ele :=  $data.homepage.collaborators.features }}
     <div class="row mb-80">
         <div class="col-md-5 col-lg-5 col-xl-5 my-auto" style="{{if not (modBool $index 2)}}order:2{{end}}">
             <h3 class="title">
