@@ -56,3 +56,68 @@ CTA:
   btnKlass: 
   clientlogos: 
   ctaAlt: 
+
+
+stunningTemplates:
+  enable: true
+  title: Stunning Templates
+  description: Start with free HTML website templates and bring your vision to life.
+  allLink: "#"
+  allText: See All Templates  →
+  background: bg-white
+  items:
+  - name : "Health & Wellness"
+    image : "images/stunning.webp"
+    info : "Psychologist" 
+    link: "#"
+  - name : "Health & Wellness"
+    image : "images/stunning.webp"
+    info : "Psychologist" 
+    link: "#"
+  - name : "Health & Wellness"
+    image : "images/stunning.webp"
+    info : "Psychologist" 
+    link: "#"
+  - name : "Health & Wellness"
+    image : "images/stunning.webp"
+    info : "Psychologist" 
+    link: "#"
+  - name : "Health & Wellness"
+    image : "images/stunning.webp"
+    info : "Psychologist" 
+    link: "#"
+  - name : "Health & Wellness"
+    image : "images/stunning.webp"
+    info : "Psychologist" 
+    link: "#"
+
+howTo:
+  enable: true
+  title: How to Create a Free Website 
+  description: Follow these 6 simple steps to create a website today.
+  allLink: "#"
+  allText: See All Templates  →
+  background: bg-gray
+  items:
+  - <strong>Sign up for a free website builder.</strong> Choose what kind of website you want to create.
+  - <strong>Customize a template or get a website made for you.</strong> Choose your starting point.
+  - <strong>Drag and drop 100s of design features.</strong> Add text, galleries, videos, vector art and more.
+  - <strong>Get ready for business.</strong> Add an online store, booking system, members area and blog.
+  - <strong>Publish your website and go live.</strong> Start building your professional online presence.
+  - <strong>Drive traffic to your site.</strong> Use advanced SEO tools and integrated marketing solutions.
+  links:
+  - name:  Get Started  →
+    url:  "#"
+  - name:  Learn How to Create a Website  →
+    url: "#"
+
+
+
+manage:
+  enable: true
+  title: Manage and Grow Your Business Online 
+  description: The Wix website builder makes it possible for anyone to create a website and manage their business—all in one place. Effortlessly capture leads, build customer relationships and accept payments right from your website.
+  link: "#"
+  linkText: Get Started  →
+  background: bg-gray
+  image: "/images/manage.webp"

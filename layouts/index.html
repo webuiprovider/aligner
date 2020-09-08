@@ -19,7 +19,23 @@
         {{ partial "collaborators.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.CTA.enable }}
+
+    
+    {{ if $data.homepage.howTo.enable }}
+        {{ partial "how-to-create.html" . }}
+    {{ end }}
+
+    
+    {{ if $data.homepage.stunningTemplates.enable }}
+        {{ partial "stunning-templates.html" . }}
+    {{ end }}
+
+    
+    {{ if $data.homepage.manage.enable }}
+        {{ partial "mange-grow.html" . }}
+    {{ end }}
+
+    {{ if $data.homepage.CTA.enable }}
         {{ partial "cta.html" . }}
     {{ end }}
     

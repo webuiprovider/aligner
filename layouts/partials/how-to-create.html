@@ -1,0 +1,33 @@
+
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ "<!-- workproductively -->" | safeHTML }}
+<section class="section  {{ $data.homepage.howTo.background }}">
+  <div class="container">
+      <div class="row">                   
+        <div class="col-md-12 col-lg-12 col-xl-12  mb-3">
+            <h2 class="title mb-0">{{ $data.homepage.howTo.title  | safeHTML}}  </h2>
+            <h3 class="subtitle ">{{ $data.homepage.howTo.description  | safeHTML}}</h3>
+        </div>
+        <ol class="how-list">
+            {{- range   $data.homepage.howTo.items }}
+                <li>{{. | safeHTML}}</li>
+            {{- end }}
+        </ol>
+        
+        {{if $data.homepage.howTo.links }}
+            <div class="col-12  h5 mt-3">
+                {{- range   $data.homepage.howTo.links }}
+                    <a href="{{ .url  | safeHTML}}" class="mr-2">{{ .name  | safeHTML}}</a>
+                {{- end }}
+            </div>
+
+        {{ end }}
+
+      </div>
+
+  </div>
+</section>
+
+{{ "<!-- workproductively -->" | safeHTML }}

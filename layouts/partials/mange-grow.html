@@ -1,0 +1,25 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ "<!-- workproductively -->" | safeHTML }}
+<section class="{{ $data.homepage.manage.background }}">
+  <div class="container-fluid">
+      <div class="row  align-items-center"> 
+          <div class="col-md-6 col-lg-6 pl-0 ">
+              <img src="{{ $data.homepage.manage.image  | relURL}}" alt="{{ $data.homepage.manage.title  | safeHTML}}" class="img-fluid">
+          </div>           
+          <div class="col-md-4 col-lg-4 offset-md-1 offset-lg-0 mt-3">
+            <h1 class="title mb-0">{{ $data.homepage.manage.title  | safeHTML}}  </h1>
+            <h3 class="subtitle my-5">{{ $data.homepage.manage.description  | safeHTML}}</h3>
+            <p > <a href="{{ $data.homepage.manage.link }}" class="text-black">{{ $data.homepage.manage.linkText  | safeHTML}}</a></p>
+         </div>
+
+          
+     
+        
+
+      </div>
+
+  </div>
+</section>
+
+{{ "<!-- workproductively -->" | safeHTML }}

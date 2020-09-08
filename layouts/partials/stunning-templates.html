@@ -1,0 +1,35 @@
+
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ "<!-- workproductively -->" | safeHTML }}
+<section class="section  stunning-templates {{ $data.homepage.stunningTemplates.background }}">
+  <div class="container">
+      <div class="row">                   
+        <div class="col-md-12 col-lg-12 col-xl-12  mb-3 text-center">
+            <h2 class="title mb-4">{{ $data.homepage.stunningTemplates.title  | safeHTML}}  </h2>
+            <h3 class="subtitle ">{{ $data.homepage.stunningTemplates.description  | safeHTML}}</h3>
+        </div>
+        {{- range   $data.homepage.stunningTemplates.items }}
+            <div class="col-md-4 col-lg-4 col-xl-4 text-center templates">
+                <a href="{{.link}}">
+                    <img src="{{ printf "%s"  .image   | relURL }}" alt="{{.name}}" class="img-fluid">
+                </a>            
+                <p class="mb-0 mt-2 title"><strong>{{.name}}</strong></p>
+                <p class="mt-0"><small>{{.info}}</small></p>
+            </div>
+        {{- end }}
+        {{if $data.homepage.stunningTemplates.allText }}
+
+        <div class="col-12 text-center h6 mt-3">
+            <a href="{{ $data.homepage.stunningTemplates.allLink  | safeHTML}}">{{ $data.homepage.stunningTemplates.allText  | safeHTML}}</a>
+        </div>
+
+        {{ end }}
+
+      </div>
+
+  </div>
+</section>
+
+{{ "<!-- workproductively -->" | safeHTML }}
