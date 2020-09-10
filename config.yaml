@@ -2,7 +2,7 @@
 baseURL: 
 languageCode: en-us
 DefaultContentLanguage: en
-title: Aligner | Translate 10X faster | Online free platform.
+title: Aligner | Your blog in multiple languages for free
 # theme: hugo-fresh
 # googleAnalytics: UA-138300699-1
 disableKinds:
@@ -15,7 +15,7 @@ markup:
 params:
   BookMenuBundle: "/menu"
   openGraph: true
-  description: Translate 10 times faster with Aligner. Free collaboration tool.
+  description: Get more visitors with multilingual blog. Easily create content, invite collaborators and publish.
   navbarlogo:
     image: logo-new.png
     link: "/en"
@@ -33,6 +33,7 @@ Languages:
     languageName: English
     weight: "1"
   et:
+    enable: false
     contentDir: content/estonian
     home: Kodu
     languageCode: et

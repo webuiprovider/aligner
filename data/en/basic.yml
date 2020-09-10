@@ -1,18 +1,14 @@
 ################################# Nav #####################################
 
 navbar:
-- title: Features
-  url: "/features"
-- title: Pricing
-  url: "/pricing"
-- title: Blog
-  url: "/blog/"
-- title: Tutorials
-  url: "/tutorials"
-- title: Log in
-  url: https://app.aligner.io
+#- title: Blog
+#  url: "/blog/"
+#- title: Tutorials
+#  url: "/tutorials"
+#- title: Log in
+# url: https://beta.aligner.io
 - title: Start free now →
-  url: https://app.aligner.io
+  url: https://beta.aligner.io
   button: true
 footer:
   logo: footer-logo.svg
@@ -44,6 +40,17 @@ footer:
         link: "/blog"
       - text: Features
         link: "/features/"
+      - text: For Legal
+        link:
+      - text: For Social Media
+        link:
+      - text: For Support
+        link:
+      - text: For Blog
+        link:
+      - text: For Knowledge Base
+        link:
+      - text: For Tutorials
     column3:
       title: Resources
       links:

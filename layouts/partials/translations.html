@@ -6,8 +6,8 @@
             <img src="{{ printf "/images/%s" $data.homepage.translations.image   | relURL }}" alt="{{$data.homepage.translations.title }}" class="img-fluid">
           </div>          
           <div class="col-md-5 col-lg-5 col-xl-5  my-auto">
-            <h2 class="title ">{{$data.homepage.translations.title }}  </h2>
-            <h3 class="subtitle my-5">{{$data.homepage.translations.subtitle }}</h3>
+            <h2 class="title ">{{$data.homepage.translations.title | safeHTML}}  </h2>
+            <h3 class="subtitle my-5">{{$data.homepage.translations.subtitle | safeHTML}}</h3>
             <p class="mt-4">
                 <a class="button btn-primarary mt-2" href="{{$data.homepage.translations.buttonlink }}">
                   {{$data.homepage.translations.buttonText }} 
