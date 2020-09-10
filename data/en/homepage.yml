@@ -25,7 +25,7 @@ workProductively:
   subtitle: Update content in real-time, assign translations and manage <br> workflow instantly in one place.
   buttonlink: https://beta.aligner.io
   buttonText: start working and invite people →
-  image: work-productively.svg
+  image: work-productively.png
 ################################# collaborators #####################################   
 collaborators:
   enable: true
