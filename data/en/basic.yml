@@ -26,11 +26,11 @@ footer:
       title: Legal
       links:
       - text: Privacy Policy
-        link: "/privacy-policy"
+        link: "https://legal.aligner.io/en/blog/p/privacy-policy"
       - text: Delivery Policy
-        link: "/delivery-policy"
+        link: "https://legal.aligner.io/en/blog/p/delivery-policy"
       - text: Terms of use
-        link: "/terms-of-use"
+        link: "https://legal.aligner.io/en/blog/p/terms-of-use"
     column2:
       title: Product
       links:

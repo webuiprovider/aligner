@@ -68,23 +68,23 @@ stunningTemplates:
   - name : "Tutorials"
     image : "images/stunning.png"
  ##   info : "Psychologist" 
-    link: "#"
+    link: "https://app.aligner.io"
   - name : "Legal Docs"
     image : "images/stunning3.png"
   #  info : "Psychologist" 
-    link: "#"
+    link: "https://app.aligner.io"
   - name : "Support Docs"
     image : "images/stunning4.png"
 #    info : "Psychologist" 
-    link: "#"
+    link: "https://app.aligner.io"
   - name : "Knowledge base"
     image : "images/stunning5.png"
  #   info : "Psychologist" 
-    link: "#"
+    link: "https://app.aligner.io"
   - name : "Social Media"
     image : "images/stunning.png"
   #  info : "Psychologist" 
-    link: "#"
+    link: "https://app.aligner.io"
 
 howTo:
   enable: true
@@ -98,7 +98,7 @@ howTo:
   - <strong>Publish and go live.</strong> You can add more languages later and update any time.
   links:
   - name:  Start now →
-    url:  "#"
+    url:  "https://app.aligner.io"
 #  - name:  Learn More →
 #    url: "#"
 
