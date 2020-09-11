@@ -6,11 +6,11 @@ navbar:
 #- title: Tutorials
 #  url: "/tutorials"
 #- title: Log in
-# url: https://beta.aligner.io
+# url: https://app.aligner.io
 - title: Start free now →
-  url: https://beta.aligner.io
+  url: https://app.aligner.io
   button: true
-footer:
+footer:s
   logo: footer-logo.svg
   alt: Aligner
   socialmediatitle: Follow Us
