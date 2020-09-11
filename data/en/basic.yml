@@ -10,7 +10,7 @@ navbar:
 - title: Start free now →
   url: https://app.aligner.io
   button: true
-footer:s
+footer:
   logo: footer-logo.svg
   alt: Aligner
   socialmediatitle: Follow Us
@@ -38,25 +38,27 @@ footer:s
         link: "/pricing"
       - text: Blog
         link: "/blog"
-      - text: Features
-        link: "/features/"
-      - text: For Legal
-        link:
-      - text: For Social Media
-        link:
-      - text: For Support
-        link:
-      - text: For Blog
-        link:
-      - text: For Knowledge Base
-        link:
-      - text: For Tutorials
+#      - text: Features
+#        link: "/features/"
+#      - text: For Legal
+#        link:
+#      - text: For Social Media
+#        link:
+#      - text: For Support
+#        link:
+#      - text: For Blog
+#        link:
+#      - text: For Knowledge Base
+#        link:
+#      - text: For Tutorials
     column3:
       title: Resources
       links:
-      - text: Aligner POOL
-        link: https://pool.aligner.io
-      - text: Aligner GO
-        link: https://go.aligner.io
-      - text: "Eesti Keeles \U0001F1EA\U0001F1EA"
-        link: "/et"
+      - text: Tutorials
+        link: https://docs.aligner.io
+      - text: Blog
+        link: https://blog.aligner.io
+     # - text: Aligner GO
+     #   link: https://go.aligner.io
+     # - text: "Eesti Keeles \U0001F1EA\U0001F1EA"
+     #   link: "/et"

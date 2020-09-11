@@ -4,7 +4,7 @@ hero:
   title: Publish multilingual blog <br> in minutes
   subtitle: Create, collaborate, edit and publish your web content simultaneously in 130+ languages
   buttontext: Start free now →
-  buttonlink: https://beta.aligner.io
+  buttonlink: https://app.aligner.io
   buttontext2:  learn more
   buttonlink2: 
   image: hero.svg
@@ -15,7 +15,7 @@ translations:
   enable: true
   title: Maximise your reach. <br>Work productively.<br> Save time.
   subtitle: Pre-translate you text with Google V3 machine translation available in the editor.
-  buttonlink: https://beta.aligner.io
+  buttonlink: https://app.aligner.io
   buttonText: start working 
   image: transition.png
 ################################# Translations #####################################  
@@ -23,7 +23,7 @@ workProductively:
   enable: true
   title: Get high quality content done faster together
   subtitle: Update content in real-time, assign translations and manage <br> workflow instantly in one place.
-  buttonlink: https://beta.aligner.io
+  buttonlink: https://app.aligner.io
   buttonText: start working and invite people →
   image: work-productively.png
 ################################# collaborators #####################################   
@@ -35,13 +35,13 @@ collaborators:
     image: "/images/share-document.svg"
     alt: 
     btnText: see it in action →
-    btnURL: https://beta.aligner.io
+    btnURL: https://app.aligner.io
   - title: Publish directly
     text: Embed created content with illustrations and graphs as a link to your webpage or share via the public link.
     image: "/images/publish.svg"
     alt: 
     btnText: start working and invite people →
-    btnURL: https://beta.aligner.io
+    btnURL: https://app.aligner.io
 
  
 ################################# CTA #####################################   
@@ -51,20 +51,20 @@ CTA:
   subtitle: We make it easier
   text: It's free. No credit card required.
   btnText: give it a try →
-  btnURL: https://beta.aligner.io
+  btnURL: https://app.aligner.io
 
 
 stunningTemplates:
   enable: true
   title: Choose from pre-built content types
   description: Choose the right type and theme. Focus on content
-  allLink: "#"
+  allLink: "https://app.aligner.io"
   allText: Go to themes  →
   items:
   - name : "Blog"
     image : "images/stunning2.png"
  #   info : "Perfect" 
-    link: "#"
+    link: "https://app.aligner.io"
   - name : "Tutorials"
     image : "images/stunning.png"
  ##   info : "Psychologist" 
@@ -108,7 +108,7 @@ manage:
   enable: true
   title: Built-in multilingual SEO
   description: Multilingual SEO is crucial. Share content in social media and be easily found in Google. Get more interactions by adding even more languages to your blog.
-  link: https://beta.aligner.io
+  link: https://app.aligner.io
   linkText: Get Started  →
 
   background: bg-gray

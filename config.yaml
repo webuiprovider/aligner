@@ -25,7 +25,7 @@ params:
     sizes:
     - 400
     - 600
-Languages:
+#Languages:
   en:
     contentDir: content/english
     home: Home

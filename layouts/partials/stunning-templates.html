@@ -13,7 +13,7 @@
         {{- range   $data.homepage.stunningTemplates.items }}
             <div class="col-md-4 col-lg-4 col-xl-4 text-center templates px-4">
                 <div class="shadow p-3 mb-5 bg-white rounded">
-                <a href="{{.link}}">
+                <a href="{{.link}}" target="_blank">
                     <img src="{{ printf "%s"  .image   | relURL }}" alt="{{.name}}" class="img-fluid">
                 </a>            
                 <p class="mb-0 mt-2 title"><strong>{{.name}}</strong></p>
